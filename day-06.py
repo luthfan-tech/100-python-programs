@@ -110,7 +110,7 @@ Area = π × 7²
 Area = π × 49
 Area ≈ 153.94
 
--radius ** 2 means radius multiplied by itself.
+-radius ** 2 means radius multiplied by itself.~
 
 
 CONCEPTS PRACTISED
