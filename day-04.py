@@ -26,19 +26,19 @@ What’s happening?
 
 number = int(input("Enter a number: "))
 
-original_number = number
-number_of_digits = len(str(number))
-digit_power_sum = 0
+original = number
+power = len(str(number))
+digit_sum = 0
 
 while number > 0:
-    digit = number % 10
-    digit_power_sum = digit_power_sum + digit ** number_of_digits
-    number = number // 10
+    digit_sum += (number % 10) ** power
+    number //= 10
 
-if digit_power_sum == original_number:
+if digit_sum == original:
     print("The number is an Armstrong number.")
 else:
     print("The number is not an Armstrong number.")
+
 
 '''
 Output:

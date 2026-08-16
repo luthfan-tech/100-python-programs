@@ -48,20 +48,17 @@ What’s happening?
 
 terms = int(input("Enter the number of terms: "))
 
-first_number = 0
-second_number = 1
+first = 0
+second = 1
 
 if terms <= 0:
-    print("Please enter a positive number of terms.")
+    print("Please enter a positive number.")
 else:
     print("Fibonacci series:")
+    for _ in range(terms):
+        print(first, end=" ")
+        first, second = second, first + second
 
-    for count in range(terms):
-        print(first_number, end=" ")
-
-        next_number = first_number + second_number
-        first_number = second_number
-        second_number = next_number
 
 '''
 Output:
@@ -76,8 +73,8 @@ text
 
 -The variables keep moving forward:
 text
-first_number  → second_number
-second_number → next_number
+first  → second
+second → next
 -The for loop repeats the process the requested number of times.
 '''
 
@@ -85,16 +82,16 @@ second_number → next_number
 
 number = int(input("Enter a positive integer: "))
 
-original_number = number
-reversed_number = 0
+original = number
+reversed_num = 0
 
 while number > 0:
-    last_digit = number % 10
-    reversed_number = reversed_number * 10 + last_digit
-    number = number // 10
+    reversed_num = (reversed_num * 10) + (number % 10)
+    number //= 10
 
-print("Original number:", original_number)
-print("Reversed number:", reversed_number)
+print("Original number:", original)
+print("Reversed number:", reversed_num)
+
 
 '''
 Output:
