@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 
 # PROGRAM 017 — FIND LCM
 first_number = int(input("Enter the first positive number: "))
