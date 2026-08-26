@@ -119,3 +119,4 @@ else:
 '''
 For 3 disks, it prints 7 moves. Use a small value like 3 or 4—output grows very quickly.
 '''
+
